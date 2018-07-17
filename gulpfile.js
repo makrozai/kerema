@@ -1,6 +1,7 @@
 // Archivo gulpfile.json
 
 var gulp = require('gulp'),
+    babel = require('gulp-babel'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     pug = require('gulp-pug'),
@@ -14,6 +15,9 @@ gulp.task('default', ['uglify', 'scss', 'pug', 'imagemin', 'webserver', 'watch']
 gulp.task('uglify', function() {
     gulp.src('source/js/*.js')
         .pipe(plumber())
+        .pipe(babel({
+          presets: ['es2015']
+        }))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
