@@ -3,6 +3,7 @@
 		"toolbox/variables";
 @import "components/reset";
 	
-
-// Or selectively include components
-// @import
+body{
+  background: linear-gradient(red, blue); 
+  height: 100vh;
+}

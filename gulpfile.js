@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     plumber = require('gulp-plumber'),
     imagemin = require('gulp-imagemin'),
-    webserver = require('gulp-webserver');
+    webserver = require('gulp-webserver'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['uglify', 'scss', 'pug', 'imagemin', 'webserver', 'watch']);
 
@@ -21,6 +22,7 @@ gulp.task('scss', function() {
     gulp.src('source/scss/*.scss')
         .pipe(plumber())
         .pipe(sass())
+        .pipe(autoprefixer({browsers: ['last 3 versions', '> 5%', 'Firefox ESR']}))
         .pipe(gulp.dest('dist/css'));
 });
 
