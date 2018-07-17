@@ -1,0 +1,14 @@
+// Variables that would be used to repeat design patterns, such as 
+// heights, margins, widths and are used by many components. Changing them in one place should affect armonically
+// how the whole site would look
+
+$cell-min: 320px;
+$cell-max : 480px;
+$tablet-min: 481px;
+$tablet-767: 767px;
+$tablet-max : 1024px;
+
+$container : 1024px;
+
+// Z INDEX
+$top-bar-zindex: 2000;
