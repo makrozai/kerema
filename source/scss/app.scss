@@ -1,10 +1,5 @@
-@import "toolbox/colors",
-		"toolbox/fonts",
-		"toolbox/variables";
-@import "components/reset";
-	
-body{
-  background: linear-gradient(red, blue); 
-  height: 100vh;
-}
-//gfgfdghd
+@import "03-generic/pt-sans";
+@import "07-trumps/utilities";
+
+// Or selectively include components
+// @import
