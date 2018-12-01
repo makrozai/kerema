@@ -3,3 +3,4 @@ dist/*
 .sass-cache/
 source/transpiled_js
 *.html
+package-lock.json
