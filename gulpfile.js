@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['uglify', 'scss', 'pug', 'imagemin', 'fontmin', 'webserver', 'watch']);
 
+// compila archivos ES6 en ES5
 gulp.task('uglify', function() {
     gulp.src('source/js/*.js')
         .pipe(plumber())
@@ -23,6 +24,7 @@ gulp.task('uglify', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
+// compilar archivos SCSS  en CSS
 gulp.task('scss', function() {
     gulp.src('source/scss/*.scss')
         .pipe(plumber())
@@ -31,6 +33,7 @@ gulp.task('scss', function() {
         .pipe(gulp.dest('dist/css'));
 });
 
+// compila archivos PUG(JADE) en HTML
 gulp.task('pug', function() {
     gulp.src('source/templates/*.pug')
         .pipe(plumber())
@@ -38,19 +41,22 @@ gulp.task('pug', function() {
         .pipe(gulp.dest('./'));
 });
 
+// comprime archivos de imagen(JPG,JPEG, PNG,GIF,SVG)
 gulp.task('imagemin', function() {
-    gulp.src('source/img/*.{jpg,jpeg,png,gif}')
+    gulp.src('source/img/*.{jpg,jpeg,png,gif,svg}')
     .pipe(plumber())
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'));
 });
 
+// genera archivos de fuente compatibles a partir de TTF
 gulp.task('fontmin', function() {
     gulp.src('source/fonts/**/*.ttf')
     .pipe(fontmin({text: '天地玄黄 宇宙洪荒'}))
     .pipe(gulp.dest('dist/fonts'));
 });
 
+// genera un servidor local
 gulp.task('webserver', function() {
   gulp.src('./')
     .pipe(webserver({
@@ -60,6 +66,7 @@ gulp.task('webserver', function() {
     }));
 });
 
+// escucha todos los cambios
 gulp.task('watch', function() {
     gulp.watch('source/js/**/*.js', ['uglify']);
     gulp.watch('source/scss/**/*.scss', ['scss']);

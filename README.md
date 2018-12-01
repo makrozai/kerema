@@ -8,17 +8,21 @@ Se instala simplemente con ```$ npm install```
 
 ## Que hace
 
-Permite trabajar con **ES2016**, **Pug** y **SCSS**
+Permite trabajar con **ES2016**, **PUG** y **SCSS**
 
 ## Scripts
 
 Hay varios, pero solo necesitas estos para trabajar
 
-**gulp**: corre el servidor y los watchers
+```gulp``` : corre el servidor y los watchers
 
-**gulp watch**: corre watchers de pug, js y css
+```gulp watch``` : corre solo watchers de pug, js y css
 
-**gulp webserver**: corre el servidor local
+```gulp webserver``` : corre solo el servidor local
+
+*en caso que quieras correrlo con solo ```npm```
+
+```npm run gulps``` : es equivalente a ```gulp```
 
 ------------------------------------
 
@@ -45,3 +49,6 @@ Esta estructura de carpetas se complementa de la misma manera que **ITCSS**, sin
 * **components** : elementos que se requiere constantemente trabajarlos, con variaciones(es recomendable que cada componente sea un mixin)
 * **settings** : guarda las variables arreglos e importa todos los components en un archivo *mixin* para posteriormente ser llamado
 * **/** : en la raiz es donde se guardara las vistas creadas
+
+
+*recuerda setear la url en caso uses este repo*
