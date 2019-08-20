@@ -1,1 +1,6 @@
-let a = () => console.log("Hello World");
+$(document).ready(function(){
+  $('.single-item').slick();
+  $('.c-slider-principal').slick({
+    fade:true
+  });
+});

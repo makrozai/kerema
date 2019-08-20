@@ -22,7 +22,7 @@ gulp.task('uglify', function() {
           presets: ['es2015']
         }))
         .pipe(uglify())
-        .pipe(concat('main.js'))
+        //.pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'));
 });
 

@@ -2,6 +2,8 @@
 // 0.- Settings - import of global variables
 // =========================
 @import "00-vendor/bootstrap/bootstrap.min";
+@import "00-vendor/slick/slick";
+@import "00-vendor/slick/slick-theme";
 
 // =========================
 // 01.- Settings - import of global variables
@@ -12,6 +14,7 @@
 // 03.- Generic -import of font
 // =========================
 @import "03-generic/worksans";
+@import "03-generic/icons";
 
 // =========================
 // 04.- Elements - import of elements
@@ -22,6 +25,15 @@
 // 05.- objects - import of objects
 // =========================
 @import "05-objects/grid";
+
+// =========================
+// 06.- components - import of components
+// =========================
+@import "06-components/navbar";
+@import "06-components/main";
+@import "06-components/section-products";
+@import "06-components/section-about";
+@import "06-components/section-title";
 
 // =========================
 // 07.- Trumps - import of utilities
