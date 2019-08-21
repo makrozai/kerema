@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".single-item").slick(),$(".c-slider-principal").slick({fade:!0}),$(".c-slider-gallery").slick({fade:!0}),$(".c-slider-testimonial").slick({fade:!0})});
