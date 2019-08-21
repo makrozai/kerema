@@ -2,19 +2,39 @@
   background: black;
   color: white;
   padding: 2rem 0;
+  text-align: center;
+
+  @media only screen and (min-width: 992px){
+    text-align: left;
+  }
 
   &__newsletter{
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
 
     img{
       width: 30%;
-      margin-right: 30px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 992px){
+      flex-direction: row;
+
+      img{
+        margin-left: 0;  
+        margin-right: 30px;
+      }
     }
 
     p{
       color: #D6BD7C;
+      margin: 1rem 0;
+
+      @media only screen and (min-width: 992px){
+        margin: 0;
+      }
     }
     &__form form{
       display: flex;
@@ -30,7 +50,7 @@
     button, input{
       color: #D6BD7C;
       background: transparent;
-      padding: .5rem 1rem;
+      padding: .5rem;
       border: none;
       box-shadow: 0 0 0 2px #D6BD7C;
     }
@@ -38,9 +58,13 @@
   }
   
   &__contact{
-    margin-top: 1rem;
+    margin-top: 2rem;
     list-style: none;
     padding-left: 0;
+
+    @media only screen and (min-width: 992px){
+      margin-top: 1rem;
+    }
   }
   &__socials{
     a{

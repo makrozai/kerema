@@ -1,0 +1,25 @@
+.c-gallery{
+  text-align: left;
+  max-width: 900px;
+  margin:0 auto;
+
+  &__photos{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item{
+      width: 50%;
+
+      @media only screen and (min-width: 992px){
+        width: 33.33%;
+      }
+
+      img{
+        width: 85%;
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+  }
+}

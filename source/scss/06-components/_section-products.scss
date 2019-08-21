@@ -1,6 +1,7 @@
 .c-section-products{
   position: relative;
   padding: 4rem 0 2rem;
+  overflow-x: hidden;
 
   > img{
     position: absolute;
@@ -12,25 +13,55 @@
     object-fit: cover;
   }
 
+  .slick-arrow{
+    display: none !important;
+  }
+
+  @media only screen and (min-width: 992px){
+    .slick-arrow{
+      display: block !important;
+    }
+  }
+
   &__slide{
     display: flex;
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    flex-direction: column;
+
+    @media only screen and (min-width: 992px){
+      flex-direction: row;
+    }
 
     img{
       width: 60%;
-      height: 420px;
+      height: auto;
       object-fit: contain;
+      order: 1;
+      margin-top: 2rem;
+
+      @media only screen and (min-width: 992px){
+        height: 420px;
+        order: -1;
+        margin-top: 0;
+      }
+  
     }
 
     &__description{
-      width: 40%;
+      width: 100%;
       color: white;
-      text-align: right;
-
+      text-align: center;
       text-transform: uppercase;
       
+      
+
+      @media only screen and (min-width: 992px){
+        width: 40%;
+        text-align: right;
+      }
+
       span{
         font-size: 1.5rem;
       }
