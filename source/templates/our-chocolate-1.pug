@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Documents
+    link(rel="stylesheet", href="dist/css/app.css")
+  body
+    include components/navbar-1.pug
+    main.c-banner-products
+      img(src="dist/img/banner-coffee.png", alt="")
+      .c-banner-products__title
+        h1 nuestros<br>chocolates
+    section.c-presentations
+      .container
+        .row.justify-content-center
+          .col-12
+            h2 presentaciones
+          .col-6.col-sm-6.col-md-3
+            a(href="our-chocolate.html").c-presentations__item
+              img(src="dist/img/chocolate-1.png", alt="")
+              p Pasta de Cacao Kere'ma
+          .col-6.col-sm-6.col-md-3
+            a(href="our-chocolate-1.html").c-presentations__item
+              img(src="dist/img/chocolate-2.png", alt="")
+              p Nibs de Cacao Kere'ma
+
+
+    section.c-presentations
+      .container
+        .row
+          .col-12
+            .c-presentations__main
+              img(src="dist/img/chocolate-complete-2.png", alt="")
+              .c-presentations__main__description
+                img(src="dist/img/chocolate-complete-2-title.png", alt="")
+                p Es el resultado de tostar, moler y refinar al grano de cacao hasta obtener la pasta de cacao, sin preservantes. ideal para preparar chocolate de taza.
+                ul
+                  li <b>Origen:</b> Finca La Torre - Villa Rica
+                  li <b>Proceso:</b> Lavado
+                  li <b>Altitud:</b> 400 - 450msnm
+                  li <b>Variedad:</b> Criollo y CCN51 100% orgánico y artesanal
+                .c-presentations__main__price
+                  h4 Presentaciones:
+                  .c-presentations__main__price-item.small
+                    span 30gr.
+                    span s/.4
+                  .c-presentations__main__price-item.small
+                    span 50gr.
+                    span s/.7
+                  .c-presentations__main__price-item.small
+                    span 125gr.
+                    span s/.16
+            a(href="#!").c-presentations__button regresar
+            
+    include components/section-clients.pug
+    include components/footer.pug
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+    script(src="dist/js/slick.js")
+    script(src="dist/js/main.js")
+    

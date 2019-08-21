@@ -10,27 +10,7 @@ html(lang="es")
       img(src="dist/img/banner-coffee.png", alt="")
       .c-banner-products__title
         h1 nuestros<br>cafés
-    section.c-presentations
-      .container
-        .row
-          .col-12
-            h2 presentaciones
-          .col-6.col-sm-6.col-md-3
-            a(href="#!").c-presentations__item
-              img(src="dist/img/coffee-1.png", alt="")
-              p Café kere'ma Premium
-          .col-6.col-sm-6.col-md-3
-            a(href="#!").c-presentations__item
-              img(src="dist/img/coffee-2.png", alt="")
-              p Café kere'ma Especial
-          .col-6.col-sm-6.col-md-3
-            a(href="#!").c-presentations__item
-              img(src="dist/img/coffee-3.png", alt="")
-              p Café kere'ma Natural
-          .col-6.col-sm-6.col-md-3
-            a(href="#!").c-presentations__item
-              img(src="dist/img/coffee-3.png", alt="")
-              p Café kere'ma Honey
+    include components/coffee-presentation.pug
     section.c-presentations
       .container
         .row
