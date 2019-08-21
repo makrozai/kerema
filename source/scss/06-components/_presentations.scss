@@ -1,0 +1,39 @@
+.c-presentations{
+  background: #1C1713;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+
+  h2{
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+
+  &__item{
+    
+    text-decoration: none;
+    img{
+      width: 60%;
+    }
+    p{
+      color: white;
+    }
+  }
+
+  &__main{
+    display: flex;
+    border: 2px solid white;
+    padding: 2rem;
+    border-radius: 2rem;
+    img{
+      flex-shrink: 0;
+      width: 30%;
+      margin-right: 10%;
+      margin-left: 10%;
+      
+    }
+    &__description{
+      width: 50%;
+    }
+  }
+}

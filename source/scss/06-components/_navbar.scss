@@ -20,5 +20,11 @@
     padding: 1rem;
     height: 10rem;
     width: 8rem;
+
+
+    &.simple{
+      background: transparent;
+      width: 15rem;
+    }
   }
 }
