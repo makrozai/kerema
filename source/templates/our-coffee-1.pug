@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Documents
+    link(rel="stylesheet", href="dist/css/app.css")
+  body
+    include components/navbar-1.pug
+    main.c-banner-products
+      img(src="dist/img/banner-coffee.png", alt="")
+      .c-banner-products__title
+        h1 nuestros<br>cafés
+    section.c-presentations
+      .container
+        .row
+          .col-12
+            h2 presentaciones
+          .col-6.col-sm-6.col-md-3
+            a(href="#!").c-presentations__item
+              img(src="dist/img/coffee-1.png", alt="")
+              p Café kere'ma Premium
+          .col-6.col-sm-6.col-md-3
+            a(href="#!").c-presentations__item
+              img(src="dist/img/coffee-2.png", alt="")
+              p Café kere'ma Especial
+          .col-6.col-sm-6.col-md-3
+            a(href="#!").c-presentations__item
+              img(src="dist/img/coffee-3.png", alt="")
+              p Café kere'ma Natural
+          .col-6.col-sm-6.col-md-3
+            a(href="#!").c-presentations__item
+              img(src="dist/img/coffee-3.png", alt="")
+              p Café kere'ma Honey
+    section.c-presentations
+      .container
+        .row
+          .col-12
+            .c-presentations__main
+              img(src="dist/img/coffee-complete-2.png", alt="")
+              .c-presentations__main__description
+                img(src="dist/img/coffee-complete-2-title.png", alt="")
+                p De proceso lavado. Perfil de tueste; de sabores a frutos rojos, notas a durazno y mandarina, cuerpo cremoso, acidez brillante, con notas dulces y cítricas.
+                ul
+                  li <b>Origen:</b>  Finca La Torre - Villa Rica
+                  li <b>Proceso:</b> Lavado
+                  li <b>Altitud:</b> 1400 a 1800 m.s.n.m.
+                  li <b>Variedad:</b> Caturra, Geisha, Catimor y Catuai.
+                .c-presentations__main__price
+                  h4 Presentaciones:
+                  .c-presentations__main__price-item
+                    span 250gr.
+                    span s/.22
+                  .c-presentations__main__price-item
+                    span 1kg.
+                    span s/.--
+          .col-12
+            a(href="#!").c-presentations__button regresar
+            
+    include components/section-clients.pug
+    include components/footer.pug
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+    script(src="dist/js/slick.js")
+    script(src="dist/js/main.js")
+    

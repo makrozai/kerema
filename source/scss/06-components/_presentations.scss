@@ -12,11 +12,20 @@
   &__item{
     
     text-decoration: none;
+    transition: all .3s;
     img{
       width: 60%;
     }
     p{
       color: white;
+      transition: all .3s;
+    }
+
+    &:hover{
+      text-decoration: none;
+      p{
+        color: #FF6300;
+      }
     }
   }
 
