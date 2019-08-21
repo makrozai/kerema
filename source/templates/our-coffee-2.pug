@@ -8,7 +8,7 @@ html(lang="es")
     include components/navbar-1.pug
     main.c-banner-products
       img(src="dist/img/banner-coffee.png", alt="")
-      .c-banner-products__title
+      .c-banner-products__title.wow.fadeInDown
         h1 nuestros<br>cafés
     include components/coffee-presentation.pug
     section.c-presentations
@@ -16,8 +16,8 @@ html(lang="es")
         .row
           .col-12
             .c-presentations__main
-              img(src="dist/img/coffee-complete-3.png", alt="")
-              .c-presentations__main__description
+              img(src="dist/img/coffee-complete-3.png", alt="").wow.fadeInLeft
+              .c-presentations__main__description.wow.fadeInRight
                 img(src="dist/img/coffee-complete-3-title.png", alt="")
                 p De proceso natural. Perfil de tueste; de cuerpo intenso, baja acidez, sabor exótico y notas a vino dulce y frutas.
                 ul
@@ -34,7 +34,7 @@ html(lang="es")
                     span 1kg.
                     span s/.--
           .col-12
-            a(href="#!").c-presentations__button regresar
+            a(href="index.html").c-presentations__button regresar
             
     include components/section-clients.pug
     include components/footer.pug
@@ -43,5 +43,6 @@ html(lang="es")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
     script(src="dist/js/slick.js")
+    script(src="dist/js/wow.js")
     script(src="dist/js/main.js")
     

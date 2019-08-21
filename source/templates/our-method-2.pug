@@ -8,11 +8,11 @@ html(lang="es")
     include components/navbar-1.pug
     main.c-banner-products
       img(src="dist/img/banner-metodo.png", alt="")
-      .c-banner-products__title
+      .c-banner-products__title.wow.fadeInDown
         h1 nuestros<br>metodos
     section.c-presentations
       .container
-        .row
+        .row.wow.fadeInDown
           .col-12
             h2 presentaciones
           .col-6.col-sm-6.col-md-3
@@ -36,8 +36,8 @@ html(lang="es")
         .row
           .col-12
             .c-presentations__main
-              img(src="dist/img/metodo-complete-3.png", alt="")
-              .c-presentations__main__description
+              img(src="dist/img/metodo-complete-3.png", alt="").wow.fadeInLeft
+              .c-presentations__main__description.wow.fadeInRight
                 img(src="dist/img/metodo-complete-3-title.png", alt="")
                 p Este tipo de preparación es para un café americano. Al café que se obtenga le deberá añadir a su taza un poco de agua hervida. Este método le permitirá disfrutar de todo un proceso: desde que vierte agua caliente al café y se emite la fragancia.
                 .c-presentations__main__price
@@ -49,7 +49,7 @@ html(lang="es")
                     span 7 tazas<br>(2 cuerpo)
                     span s/.55
           .col-12
-            a(href="#!").c-presentations__button regresar
+            a(href="index.html").c-presentations__button regresar
             
     include components/section-clients.pug
     include components/footer.pug
@@ -58,5 +58,6 @@ html(lang="es")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
     script(src="dist/js/slick.js")
+    script(src="dist/js/wow.js")
     script(src="dist/js/main.js")
     

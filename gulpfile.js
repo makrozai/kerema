@@ -18,10 +18,10 @@ gulp.task('default', ['uglify', 'scss', 'pug', 'imagemin', 'fontmin', 'webserver
 gulp.task('uglify', function() {
     gulp.src('source/js/*.js')
         .pipe(plumber())
-        .pipe(babel({
-          presets: ['es2015']
-        }))
-        .pipe(uglify())
+        //.pipe(babel({
+        //  presets: ['es2015']
+        //}))
+        //.pipe(uglify())
         //.pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'));
 });

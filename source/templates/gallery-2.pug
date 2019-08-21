@@ -9,7 +9,7 @@ html(lang="es")
     main.c-banner-products
       img(src="dist/img/banner-gallery.png", alt="")
       .c-banner-products__title
-        h1 galería<br>de  fotos
+        h1.wow.fadeInDown galería<br>de  fotos
 
 
     section.c-presentations
@@ -18,7 +18,7 @@ html(lang="es")
           .col-12
             .c-gallery
               p > GALERIA DE FOTOS / CONSUMIDORES
-              .c-gallery__photos
+              .c-gallery__photos.wow.fadeInDown
                 .item
                   img(src="dist/img/gallery-3-1.png", alt="")
                 .item
@@ -32,7 +32,7 @@ html(lang="es")
                 .item
                   img(src="dist/img/gallery-3-6.png", alt="")
                 
-            a(href="#!").c-presentations__button regresar
+            a(href="index.html").c-presentations__button regresar
             
     include components/section-clients.pug
     include components/footer.pug
@@ -41,5 +41,6 @@ html(lang="es")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
     script(src="dist/js/slick.js")
+    script(src="dist/js/wow.js")
     script(src="dist/js/main.js")
     
