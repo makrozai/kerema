@@ -18,34 +18,7 @@ html(lang="es")
     include components/section-testimonial.pug
 
     include components/section-clients.pug
-    footer.c-footer
-      .container
-        .row
-          .col-12.col-lg-6
-            .c-footer__newsletter
-              img(src="dist/img/logo.svg", alt="")
-              .c-footer__newsletter__form
-                p Únete a la lista para recibir promociones especiales y novedades
-                form(action="#!")
-                  button Suscríbete
-                  input(type="text" placeholder="email@example.com")
-            ul.c-footer__contact
-              li D. Carretera el Oconal - Villa Rica(0.2 km) - Perú
-              li T. 983467917 - 974891025
-              li E. info@keremaperu.com
-          .col-12.col-lg-6 
-            h4 Obten las últimas noticias
-            .c-footer__socials
-              a(href="#!")
-                i.icon-instagram
-              a(href="#!")
-                i.icon-facebook
-              a(href="#!")
-                i.icon-youtube
-              a(href="#!")
-                i.icon-whatsapp
-            p 2019 hecho con ♥ por 
-              a(href="#!") Altiplánika Marketing
+    include components/footer.pug
 
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
