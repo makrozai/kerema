@@ -9,4 +9,14 @@
     top: 0;
     left: 0;
   }
+
+  &--black{
+    background: #1C1713;
+  }
+
+  &__description{
+    max-height: 6rem;
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+  }
 }

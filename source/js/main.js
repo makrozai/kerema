@@ -3,4 +3,10 @@ $(document).ready(function(){
   $('.c-slider-principal').slick({
     fade:true
   });
+  $('.c-slider-gallery').slick({
+    fade:true
+  });
+  $('.c-slider-testimonial').slick({
+    fade:true
+  });
 });

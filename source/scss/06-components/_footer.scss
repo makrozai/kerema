@@ -1,0 +1,62 @@
+.c-footer{
+  background: black;
+  color: white;
+  padding: 2rem 0;
+
+  &__newsletter{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    img{
+      width: 30%;
+      margin-right: 30px;
+    }
+
+    p{
+      color: #D6BD7C;
+    }
+    &__form form{
+      display: flex;
+      width: 100%;
+    }
+    button{
+      margin-right: auto;
+      width: 30%;
+    }
+    input{
+      width: 65%;
+    }
+    button, input{
+      color: #D6BD7C;
+      background: transparent;
+      padding: .5rem 1rem;
+      border: none;
+      box-shadow: 0 0 0 2px #D6BD7C;
+    }
+
+  }
+  
+  &__contact{
+    margin-top: 1rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  &__socials{
+    a{
+      margin-right: .5rem;
+    }
+    i{
+      font-size: 3rem;
+    }
+  }
+  a{
+    color: white;
+    transition:all .3s;
+    text-decoration: none;
+
+    &:hover{
+      color: #FF6300;
+    }
+  }
+}
