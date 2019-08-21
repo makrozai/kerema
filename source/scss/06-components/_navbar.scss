@@ -33,4 +33,22 @@
       }
     }
   }
+  &__dropdown{
+    background: #8A8A8A;
+    text-transform: uppercase;
+
+    a{
+      font-weight: 700 !important;
+
+      &.white{
+        text-transform: initial;
+        font-weight: 400 !important;
+        background: lighten(#8A8A8A,40);
+
+        &:hover{
+          background: white;
+        }
+      }
+    }
+  }
 }
