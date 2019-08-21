@@ -65,7 +65,7 @@
           display: block;
           box-shadow: 0 0 0 2px #FF6300;
           padding: .5rem 1rem;
-          margin: 1rem  0 .5rem;
+          margin: 1rem  auto .5rem;
           width: 80%;
 
           border-radius: .5rem;
@@ -85,6 +85,7 @@
     color: white;
 
     &:hover{
+      color: white;
       text-decoration: none;
     }
   }
