@@ -1,0 +1,104 @@
+.c-contact{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+
+  &-back{
+    position: relative;
+    overflow-x: hidden;
+
+    > img{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 90%;
+    }
+  }
+
+  &__description, &__form{
+    width: 100%;
+    padding: 0 2rem;
+
+    @media only screen and (min-width: 992px){
+      width: 50%;
+    }
+  }
+
+  &__description{
+    text-align: center;
+    position: relative;
+
+    &:after{
+      content: "";
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: .5rem;
+      transform: translateX(50%);
+      background: #FF6300;
+    }
+
+    @media only screen and (min-width: 992px){
+      text-align: right;
+
+      &:after{
+        display: block;
+      }
+    }
+
+    img{
+      height: 5rem;
+    }
+    h3{
+      text-transform: uppercase;
+    }
+  }
+  &__form{
+    img{
+      height: 5.5rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+
+      @media only screen and (min-width: 992px){
+        margin-top: 0;
+      }
+    }
+
+    &-group{
+      label{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+      span{
+        display: block;
+        font-weight: 700;
+      }
+      input, textarea{
+        display: block;
+        width: 100%;
+        text-align: center;
+        resize: none;
+        color: white;
+        
+        margin: .5rem 0;
+        background: transparent;
+        border:1px solid white;
+
+        &:hover, &:focus{
+          outline: none
+        }
+      }
+      button{
+        background: transparent;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -12,16 +12,44 @@ html(lang="es")
         h1 nuestro<br>trabajo
 
 
-    section.c-presentations
+    section.c-presentations.c-contact-back
+      img(src="dist/img/contact-back.png", alt="")
       .container
         .row
           .col-12
-            .c-presentations__main
-              img(src="dist/img/work-complete-1.png", alt="")
-              .c-presentations__main__description
-                img(src="dist/img/work-complete-1-title.png", alt="")
-                p Te invitamos a recorrer nuestra finca, aprender sobre el proceso productivo del café, que inicia en la semilla, viveros, plantaciones; hasta el resultado final, una buena taza de café recién pasado.
-                
+            .c-contact
+              .c-contact__description
+                img(src="dist/img/title-contact.png", alt="")
+                h3 Informacion<br>de contacto
+                p 983 467 917
+                p 974 891 025
+                p info@keremaperu.com
+                h3 dirección
+                p Carretera el Oconal - Villa Rica (0.2 km)
+                h3 Horario
+                p 09:00 A 19:00
+              .c-contact__form
+                form(action="#!")
+                  .c-contact__form-group
+                    img(src="dist/img/contact-form-title.png", alt="")
+                  .c-contact__form-group
+                    label
+                      span Tu nombre
+                      input(type="text")
+                  .c-contact__form-group
+                    label
+                      span E-mail
+                      input(type="email")
+                  .c-contact__form-group
+                    label
+                      span Asunto
+                      input(type="text")
+                  .c-contact__form-group
+                    label
+                      span Mensaje
+                      textarea(cols="30", rows="10")
+                  .c-contact__form-group
+                    button enviar >
             a(href="#!").c-presentations__button regresar
             
     include components/section-clients.pug
