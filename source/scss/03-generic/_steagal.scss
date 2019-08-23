@@ -1,0 +1,34 @@
+//aqui se importa las fuentes
+@font-face {
+  font-family: "steagal";
+  src: url('#{$font-path}steagal/Steagal-Re.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "steagal";
+  src: url('#{$font-path}steagal/Steagal-Me.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "steagal";
+  src: url('#{$font-path}steagal/Steagal-MeIt.otf');
+  font-weight: 500;
+  font-style: italic
+}
+@font-face {
+  font-family: "steagal";
+  src: url('#{$font-path}steagal/Steagal-Bo.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: "steagal";
+  src: url('#{$font-path}steagal/Steagal-Li.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "steagal";
+  src: url('#{$font-path}steagal/Steagal-LiIt.otf');
+  font-weight: 300;
+  font-style: italic;
+}

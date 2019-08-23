@@ -31,10 +31,6 @@
     p{
       color: #D6BD7C;
       margin: 1rem 0;
-
-      @media only screen and (min-width: 992px){
-        margin: 0;
-      }
     }
     &__form form{
       display: flex;
@@ -82,5 +78,8 @@
     &:hover{
       color: #FF6300;
     }
+  }
+  .red{
+    color: #FF6300;
   }
 }
