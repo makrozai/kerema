@@ -1,6 +1,6 @@
 .c-section-title{
   position: relative;
-  padding: 4rem 0;
+  padding: 8rem 0;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -8,7 +8,11 @@
 
   img{
     display: block;
-    margin: 0 auto 2rem;
+    margin: 0 auto 4rem;
     height: 10rem;
+
+    @media only screen and (min-width: 992px){
+      height: 13rem;
+    }
   }
 }

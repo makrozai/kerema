@@ -8,8 +8,19 @@
 
   .nav-link{
     color: white;
-  }
+    transition: all .3s;
 
+    &:hover{
+      color: #FF6300 !important;
+    }
+  }
+  &__icons{
+    i{
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+    }
+  }
   &__logo{
     display: block;
     position: absolute;
