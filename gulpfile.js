@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     fontmin = require('gulp-fontmin');
 
-gulp.task('default', ['uglify', 'scss', 'pug', 'imagemin', 'fontmin', 'webserver', 'watch']);
+gulp.task('default', ['uglify', 'scss', 'pug', 'fontmin', 'webserver', 'watch']);
 
 // compila archivos ES6 en ES5
 gulp.task('uglify', function() {
@@ -43,13 +43,6 @@ gulp.task('pug', function() {
         .pipe(gulp.dest('./'));
 });
 
-// comprime archivos de imagen(JPG,JPEG, PNG,GIF,SVG)
-gulp.task('imagemin', function() {
-    gulp.src('source/img/**/*.{jpg,jpeg,png,gif,svg}')
-    .pipe(plumber())
-    .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'));
-});
 
 // genera archivos de fuente compatibles a partir de TTF
 gulp.task('fontmin', function() {
@@ -74,5 +67,4 @@ gulp.task('watch', function() {
     gulp.watch('source/scss/**/*.scss', ['scss']);
     gulp.watch('source/templates/**/*.pug', ['pug']);
     gulp.watch('source/fonts/**/*.ttf', ['fontmin']);
-    gulp.watch('source/img/*.{jpg,jpeg,png,gif}', ['imagemin']);
 });
