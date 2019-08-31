@@ -10,11 +10,12 @@
   }
 
   &__item{
-    
     text-decoration: none;
     transition: all .3s;
     img{
+      display: block;
       width: 60%;
+      margin: 0 auto;
       height: 250px;
       object-fit: contain;
     }
@@ -22,11 +23,80 @@
       color: white;
       transition: all .3s;
     }
+    .icon-plus{
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.5rem;
+      background: #FF6300;
+      margin-left: auto;
+      margin-right: 3rem;
+      transform: translateY(-150%);
+      transition:all .3s;
+    }
 
     &:hover{
       text-decoration: none;
       p{
         color: #FF6300;
+      }
+
+      .icon-plus{
+        transform: translateY(-150%) scale(1.2);
+      }
+    }
+    &.yellow{
+      .icon-plus{
+        background: #FFD200;
+      }
+      &:hover{
+        p{
+          color: #FFD200;
+        }
+      }
+    }
+    &.green{
+      .icon-plus{
+        background: #7D8700;
+      }
+      &:hover{
+        p{
+          color: #7D8700;
+        }
+      }
+    }
+    &.orange{
+      .icon-plus{
+        background: #FF9200;
+      }
+      &:hover{
+        p{
+          color: #FF9200;
+        }
+      }
+    }
+    &.brown{
+      .icon-plus{
+        background: #803000;
+      }
+      &:hover{
+        p{
+          color: #803000;
+        }
+      }
+    }
+    &.brown-2{
+      .icon-plus{
+        background: #80604C;
+      }
+      &:hover{
+        p{
+          color: #80604C;
+        }
       }
     }
   }
@@ -64,7 +134,7 @@
         &:last-child{
           top: 0;
           right: 0;
-          width: 50%;
+          width: 60%;
           position: absolute;
         }
       }
