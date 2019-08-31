@@ -15,11 +15,16 @@
   }
 
   &__description{
-    max-height: 6rem;
+    max-height: auto;
     margin-bottom: 2rem;
-    overflow-y: scroll;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    padding: 0 2rem;
 
-    
+    @media only screen and (min-width: 992px){
+      max-height: 9rem;
+      padding: 0 0;
+    }
   }
 }
 
