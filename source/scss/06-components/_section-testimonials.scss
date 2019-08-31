@@ -67,3 +67,27 @@
     }
   }
 }
+.c-slider-testimonial{
+  .slick-arrow{
+    display: block !important;
+    height: 2rem;
+    background: url(../img/arrow-testimonial.svg);
+    width: 2rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(0, 0) !important;
+
+    &:before{
+      display: none !important;
+    }
+
+    &.slick-prev{
+      transform: translate(0, 0) rotateY(180deg) !important;
+    }
+
+    @media only screen and (min-width: 992px){
+      padding: 0 0;
+    }
+  }
+}

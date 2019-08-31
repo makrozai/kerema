@@ -30,7 +30,9 @@ html(lang="es")
         .row
           .col-12
             .c-presentations__main
-              img(src="dist/img/chocolate-complete-1.png", alt="").wow.fadeInLeft
+              .c-presentations__main-image
+                img(src="dist/img/chocolate-complete-1.png", alt="").wow.fadeInLeft
+                img(src="dist/img/chocolate-complete-background.png", alt="").wow.fadeInLeft
               .c-presentations__main__description.wow.fadeInRight
                 img(src="dist/img/chocolate-complete-1-title.png", alt="")
                 p Es el resultado de tostar, moler y refinar al grano de cacao hasta obtener la pasta de cacao, sin preservantes. Ideal para preparar chocolate de taza.
@@ -40,10 +42,10 @@ html(lang="es")
                   li <b>Altitud:</b> 400 - 450msnm
                   li <b>Variedad:</b> Criollo y CCN51-100% orgánico y artesanal
                 .c-presentations__main__price(style="color:#803000;")
-                  h4 Presentaciones:
+                  h4(style="color:#803000;") Presentaciones:
                   .c-presentations__main__price-item
-                    span 190gr.
-                    span S/.13
+                    span(style="color:#803000;") 190gr.
+                    span(style="box-shadow:0 0 0 2px #803000;") S/.13
             a(href="index.html").c-presentations__button REGRESAR
             
     include components/section-clients.pug

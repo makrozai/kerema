@@ -3,17 +3,23 @@
 
   img{
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     object-fit: cover;
     object-position: top center;
+
+    @media only screen and (min-width: 992px){
+      height: 30rem;
+      object-position: top center;
+  
+    }
   }
   &__title{
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     background: rgba(black, .5);
     width: 100%;
-    height: 100%;
+    height: 30%;
     display: flex;
     align-items: flex-end;
     padding: 1rem 3rem;
@@ -23,7 +29,11 @@
 
 
     @media only screen and (min-width: 992px){
+      top: 0;
+      bottom: 0;
+      right: 0;
       width: 50%;
+      height: 100%;;
       align-items: center;
       background: rgba(black, .8);
     }

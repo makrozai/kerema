@@ -40,27 +40,44 @@
 
     @media only screen and (min-width: 992px){
       flex-direction: row;
+      align-items: center;
     }
     
-    img{
+    &-image{
+      position: relative;
       flex-shrink: 0;
-      width: 30%;
-      margin-right: auto;
-      margin-left: auto;
-      object-fit: contain;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      width: 100%;
+      padding-top: 4rem;
 
       @media only screen and (min-width: 992px){
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-top: 0;
-        margin-bottom: 0;
+        width: 50%;
+      }
+
+      img{
+        &:first-child{
+          width: 70%;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        &:last-child{
+          top: 0;
+          right: 0;
+          width: 50%;
+          position: absolute;
+        }
       }
       
     }
     &__description{
+      width: 100%;
       padding: 0 3rem;
+
+      @media only screen and (min-width: 992px){
+        width: 50%;
+      }
+
       P{
         font-weight: 200;
       }
@@ -92,7 +109,10 @@
         &.small{
           width: 33.33%;
         }
-
+        span{
+          font-size: 1.2em;
+          font-weight: 500;
+        }
         span:first-child{
           display: block;
         }
